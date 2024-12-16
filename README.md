@@ -12,6 +12,14 @@ This has been tested on Linux (Debian 11 with an Nvidia).
 - Julia (for plotting instead of Matlab)
 - (optional) ninja (`apt install ninja-buildtool`) or make
 
+## Build Dependencies
+- GCC and G++ <= 12.0
+```bash
+sudo zypper in gcc12 gcc12-c++
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 50
+sudo update-alternatives --config gcc
+```
+
 # Install
 - Clone this repo and cd into it.
 - `mkdir build; cd build`
